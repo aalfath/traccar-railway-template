@@ -29,6 +29,9 @@ if [ -n "${DATABASE_URL:-}" ]; then
   case "$hostport" in *:*) ;; *) hostport="$hostport:5432" ;; esac
   DB_DRIVER="org.postgresql.Driver"
   DB_URL="jdbc:postgresql://${hostport}/${dbname}"
+  # Traccar reads environment variables as config keys (DATABASE_URL = database.url),
+  # so the postgres:// form must not reach it.
+  unset DATABASE_URL
 else
   echo "[railway] DATABASE_URL is not set: using the embedded H2 database in $DATA_DIR (testing only)."
   DB_DRIVER="org.h2.Driver"
