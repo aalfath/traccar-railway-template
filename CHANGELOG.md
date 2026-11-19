@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.17.0 (2026-11-19, README)
+
+- README only: added the Deploy on Railway button for the published template `traccar-1`. No change to the image or the start script, so there's nothing to apply.
+
 ## 6.17.0 (2026-11-19)
 
 - First release of the template: Traccar 6.17.0 (`traccar/traccar:6.17.0-alpine@sha256:b32d9346adf46df7c33c58577e17ad60f6feadd1f3cd87c876041f6c79317ef1`) with Railway Postgres.
