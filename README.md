@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/traccar-1?utm_medium=integration&utm_source=button&utm_campaign=traccar)
+
 # Traccar on Railway
 
 This repo packages the official [Traccar](https://www.traccar.org) server image for one-click deployment on [Railway](https://railway.com).
